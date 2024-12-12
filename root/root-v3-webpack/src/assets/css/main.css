@@ -1,0 +1,21 @@
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+#app {
+  height: 100vh;
+  user-select: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+micro-app,
+micro-app-body{
+  height:100%
+}

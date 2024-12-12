@@ -1,0 +1,25 @@
+syntax = "proto3";
+package SCATTER;
+message ObjectMeta{
+   int64  id =1;
+   int64  owner_id=2;
+   string name=3;
+   int32  object_type=4;      
+}
+
+message Point3DValue{
+   double x_coord=1;
+   double y_coord=2;
+   double z_coord=3;
+   double attr_value=4;
+}
+
+message ScatterObjectData{
+   repeated Point3DValue points =1;
+}
+
+
+message ScatterObject{
+   ObjectMeta meta=1;
+   ScatterObjectData data=2;
+}
